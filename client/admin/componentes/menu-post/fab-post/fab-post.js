@@ -1,0 +1,14 @@
+import * as angular from 'angular'
+import * as angularMaterial from 'angular-material'
+
+const raiz ="./client/admin/componentes/menu-post/"
+const nombreComponente = 'fabPost'
+const nombreFichero = 'fab-post'
+
+angular.module(nombreComponente, ['ngMaterial'])
+    .component(nombreComponente, {
+        templateUrl: `${raiz}${nombreFichero}/${nombreFichero}.html`
+    })
+
+
+export default nombreComponente
